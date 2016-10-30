@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8" />
+	<title>jQuery i AJAX </title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	<style>
+	
+		body{
+			background: #FCFCFC;
+		}
+	
+		#container{
+			width: 500px;
+			margin: 50px auto;
+		}
+	
+	</style>
+
+	<script src="jquery-1.9.1.min.js"></script>
+	<script src="scripts.js"></script>
+	
+</head>
+<body>
+
+<div id="container">
+	<form class="form-horizontal" method="post" action="server.php">
+	
+		<div class="control-group">
+			<label class="control-label" for="login">Login</label>
+			<div class="controls">
+				<input type="text" id="login" name="login" placeholder="Twój login">
+			</div>
+		</div>
+		
+		<div class="control-group">
+			<label class="control-label" for="pass">Hasło</label>
+			<div class="controls">
+				<input type="password" id="pass" name="pass" placeholder="Podaj hasło">
+			</div>
+		</div>
+		
+		<div class="control-group">
+			<label class="control-label" for="passconf">Powtórz hasło</label>
+			<div class="controls">
+				<input type="password" id="passconf" name="passconf" placeholder="Powtórz hasło">
+			</div>
+		</div>
+		
+		<div class="control-group">
+			<label class="control-label" for="email">Email</label>
+			<div class="controls">
+				<input type="text" id="email" name="email" placeholder="Email">
+			</div>
+		</div>
+		
+		<div class="control-group">
+		<label class="control-label" for="interest">Zainteresowania</label>
+			<div class="controls">
+				<label class="checkbox"><input type="checkbox" name="interest[]" value="tech"> Technologie</label>
+				<label class="checkbox"><input type="checkbox" name="interest[]" value="moto"> Motoryzacja</label>
+				<label class="checkbox"><input type="checkbox" name="interest[]" value="sport"> Sport</label>
+				<label class="checkbox"><input type="checkbox" name="interest[]" value="books"> Literatura</label>
+				<label class="checkbox"><input type="checkbox" name="interest[]" value="travel"> Podróże</label>
+				<label class="checkbox"><input type="checkbox" name="interest[]" value="science"> Nauka</label>
+			</div>
+		</div>
+		
+		<div class="control-group">
+			<label class="control-label" for="sex">Płeć</label>
+			<div class="controls">
+				<label class="radio"><input type="radio" name="sex" value="male"> Mężczyzna</label>
+				<label class="radio"><input type="radio" name="sex" value="female"> Kobieta</label>
+			</div>
+		</div>
+		
+		<div class="control-group">
+			<label class="control-label" for="education">Wykształcenie</label>
+			<div class="controls">
+				<select id="education" name="education">
+					<option>podstawowe</option>
+					<option>gimnazjalne</option>
+					<option>średnie</option>
+					<option>wyższe</option>
+				</select>
+			</div>
+		</div>
+		
+		<div class="control-group">
+			<label class="control-label" for="about">O sobie</label>
+			<div class="controls">
+				<span class="help-block hit-counter"></span>
+				<textarea name="about" id="about" rows="3" data-maxlength="12" placeholder="Kilka słów o sobie"></textarea>
+			</div>
+		</div>
+		
+		<button type="submit" class="btn">Zapisz formularz</button>
+	</form>
+</div>
+	
+</body>
+</html>

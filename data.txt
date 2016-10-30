@@ -1,0 +1,10 @@
+login: dasdas
+pass: 
+passconf: 
+email: fgh
+interest: Array
+sex: male
+education: wyższe
+about: sadasdasd
+
+
